@@ -1,21 +1,24 @@
 import { Fragment } from "react"
 import TechList from "./TechList"
+import BuiltProjects from "./BuiltProjects"
+import GetInTouch from "./GetInTouch"
+import Footer from "./Footer"
 
 
-const BodyDetails = () => {
+const BodyDetails = (props) => {
   return (
 <Fragment>
-    <div className="mt-[5rem]">
+    <div  onClick={props.hideMenuHandler} className={`mt-[5rem] ${props.showMenu ? " blur-sm" : ""}`}>
         <p className="text-main font-pops  py-5">Hi, my name is</p>
         <p className="text-gray-200 text-3xl font-pops font-semibold py-4">Nwodoh Joseph</p>
         <p className="text-gray-400 text-3xl font-pops py-8 pl-3 "> I interact with the web.</p>
         <p className="w-[90%] font-pops text-gray-400 pt-3">Hello there! {"I'm"} Nwodoh Joseph, a  passionate <span className="text-main"> junior frontend developer</span>  eager
          to embark on an exciting journey in the world of web development </p>
-         <button className="border border-main my-[3rem] text-lg py-2 px-4 rounded-md text-main font-pops">I want to know more</button>
+         <button className="border border-main my-[3rem] text-2xl py-2 px-4 rounded-md text-main font-pops">I want to know more</button>
         <div className="mt-[9rem]">   
-            <div className="flex gap-2 py-5  text-lg font-pops capitalize font-semibold">
+            <div className="flex gap-2 py-5  text-2xl font-pops capitalize font-semibold">
             <p className="text-main">01.</p>
-            <h1 className="text-gray-200 ">About me</h1>
+            <h1  id="about" className="text-gray-200 ">About me</h1>
     
             </div>
         <p className="text-gray-400 w-[93%] font-nun">I bring a blend of creativity and technical proficiency to the table, coupled with a strong foundation
@@ -29,6 +32,9 @@ const BodyDetails = () => {
 
         <TechList/>
         </ul>
+        <BuiltProjects/>
+        <GetInTouch />
+        <Footer/>
     </div>
 </Fragment>
   )

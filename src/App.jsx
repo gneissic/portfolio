@@ -1,18 +1,18 @@
 
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
-import BodyDetails from './components/home/BodyDetails'
-import NavItems from './components/nav/NavItems'
+import HomePage from './pages/HomePage'
 
 function App() {
-
+  const router = createBrowserRouter([{
+    path: "",
+    element:<HomePage/>
+  }])
+  
 
   return (
     <>
-    <div className='pl-5'>
-     <NavItems/>
-     <BodyDetails/>
-
-    </div>
+   <RouterProvider router={router} />
     </>
   )
 }
