@@ -19,7 +19,6 @@ const HomePage = () => {
         <NavItems showMenuHandler={showMenuHandler} />
         <BodyDetails showMenu={showMenu}  hideMenuHandler={hideMenuHandler} />
       </div>
-    
     </Fragment>
   );
 };

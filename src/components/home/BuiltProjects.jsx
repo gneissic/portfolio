@@ -59,7 +59,7 @@ const BuiltProjects = () => {
     </div>
     
   
-  <div className='grid gap-4 pb-5'>
+  <div className='grid lg:grid-cols-2 gap-4 pb-5'>
 
    {projectDetails.map((items)=> (<ProjectItems key={items.id}  link1={items.link1} link2={items.link2}  description={items.description} title={items.title} languages={items.languages} />))} 
   </div>

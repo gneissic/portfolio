@@ -30,9 +30,12 @@ const Sidebar = (props) => {
             <p className="text-gray-400 font-semibold">Contact</p>
         </a>
         <div>
-        <button className="border  tracking-wide rounded-md border-main py-4 px-6 my-5  text-sm text-main font-semibold">
+            <a  target="_blank"  rel="noreferrer" href="https://drive.google.com/file/d/1tuIigY3Q02gnZZXRqxqNR6-4SplNCAiJ/view?usp=drive_link">
+            <button className="border  tracking-wide rounded-md border-main py-4 px-6 my-5  text-sm text-main font-semibold">
         Résumé
     </button>
+            </a>
+       
 
         </div>
     </div>
